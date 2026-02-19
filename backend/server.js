@@ -16,7 +16,7 @@ app.get('/readyz', (_req, res) => res.status(200).send('ready'));
 app.get('/api/ping', (_req, res) => {
     res.json({
         ok: true,
-        message: 'pong',
+        message: 'pong — deployed via CI/CD!  🚀',
         service: 'backend',
         time: new Date().toISOString(),
         hostname: os.hostname()
